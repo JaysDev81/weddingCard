@@ -60,14 +60,15 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h5 class="text-white mt-0">2021년 8월 28일(토) 11:00 <br>aT포레 웨딩홀 5층 그랜드 홀</h2>
-                        <hr class="divider divider-light" />
+                    
                         <h5 class="text-white mt-0">꽃같은 그대 <br>나무같은 나를 믿고 <br>길을 나서자 </h2>
                             <p class="text-white-75 mb-4">이수동 [동행]</p>
                             <hr class="divider divider-light" />
                             <h5 class="text-white mt-0">함께 가는 그 길이 어떤 길이든 <br>두손 꼭 잡고 함께 걸어 가려합니다. <br>그 시작을 축하해 주시면<br>
                                 감사하겠습니다.</h3>
-                            <!--<a class="btn btn-light btn-xl" href="#services">Get Started!</a>-->
+                            <hr class="divider divider-light" />
+                           <h5 class="text-white mt-0">2021년 8월 28일(토) 11:00 <br>aT포레 웨딩홀 5층 그랜드 홀</h2>
+                        
                 </div>
             </div>
         </div>
@@ -185,20 +186,20 @@
                 <div class="col-lg-8 col-xl-6 text-center">
                     <h2 class="mt-0">오시는 길</h2>
                     <hr class="divider" />
-                    
+                    <div id="map" style="width:500px;height:400px;"></div>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0e8f9316803aed186e64135e0db4711c"></script>
+                    <script>
+                        var container = document.getElementById('map');
+                        var options = {
+                            center: new kakao.maps.LatLng(33.450701, 126.570667),
+                            level: 3
+                        };
+
+                        var map = new kakao.maps.Map(container, options);
+                    </script>
                 </div>
             </div>
-            <div id="map" style="width:500px;height:400px;"></div>
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
-            <script>
-                var container = document.getElementById('map');
-                var options = {
-                    center: new kakao.maps.LatLng(33.450701, 126.570667),
-                    level: 3
-                };
-
-                var map = new kakao.maps.Map(container, options);
-            </script>
+            
             
 
             <!-- <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
